@@ -18,13 +18,14 @@ section {
 }
 
 section .box {
+  margin-bottom: 30px;
   padding: 45px;
-  width: calc(100% /3);
+  width: calc(100% / 3 - 20px);
   font-size: 1rem;
   border-radius: 8px;
 }
 
-section .box:not(:last-child) {
+section .box:not(:nth-child(3n+0)) {
   margin-right: 30px;
 }
 
@@ -35,8 +36,11 @@ section .box .img-border {
   border-radius: 50%;
 }
 
-.box .img-border img {
+.box img {
   height: 32px;
+}
+
+.box .img-border img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,13 +110,18 @@ p {
 .t-grey {
   color: #c0c3d0;
 }
-
 .b-lgrey {
   background-color: #EEF4ED;
 }
+.b-dgrey {
+  background-color: #19191F;
+}
 
-.t-dblue {
+.t-blue {
   color: #21333E;
+}
+.b-dblue {
+  background-color: #111117;
 }
 .b-blue {
   background-color: #21333E;
@@ -202,11 +211,38 @@ main .jumbotron {
 /* FEATURES */
 #features .container {
   display: flex;
+  justify-content: space-between;
 }
 
 /* ABOUT */
-#about .container {
+#about::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 60px;
+  background-image: url(../img/bullets.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
 
+#about::after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 60px;
+  background-image: url(../img/bullets.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
 }
 
 #about .container small {
@@ -215,8 +251,8 @@ main .jumbotron {
 }
 
 #about .container h2 span {
-  padding: 0 10px;
   font-family: inherit;
+  padding: 0 10px;
   background-color: #DAECED;
 }
 
@@ -251,4 +287,44 @@ main .jumbotron {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* SERVICES */
+#services .container small {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#services .container h2 span {
+  font-family: inherit;
+  padding: 0 10px;
+  background-color: #0E272D;
+}
+
+#services .container .middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#services .container .middle>p {
+  max-width: 80%;
+}
+
+#services .container .bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#services .container .bottom img {
+  height: 44px;
+}
+
+#services .container .bottom p {
+  margin-bottom: 40px;
+}
+
+#services .container .bottom .btn {
+  display: inline-block;
 }

@@ -65,7 +65,7 @@
           <div class="img-border b-lgreen">
             <img :src="imgPath + e.img + e.imgExt" alt="e.img">
           </div>
-          <h3 class="t-dblue"> {{e.title}} </h3>
+          <h3 class="t-blue"> {{e.title}} </h3>
           <p> {{e.p}} </p>
         </div>
       </div>
@@ -75,13 +75,13 @@
     <section id="about">
       <div class="container">
         <small class="t-green">About the network</small>
-        <h2 class="t-dblue"><span class="t-dgreen">The</span> Company</h2>
+        <h2 class="t-blue"><span class="t-dgreen">The</span> Company</h2>
         <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
 
         <div class="infos">
           <div v-for="e in about">
             <img :src="imgPath + e.img + e.imgExt" :alt="e.img">
-            <h3 class="t-dblue"> {{e.title}} </h3>
+            <h3 class="t-blue"> {{e.title}} </h3>
             <p> {{e.p}} </p>
           </div>
         </div>
@@ -89,8 +89,29 @@
       </div>
       <img src="img/about-3.jpg" alt="about">
     </section>
+
     <!-- Section 3 -->
-    <section></section>
+    <section id="services" class="b-dblue">
+      <div class="container">
+        <small class="t-green">Our business areas</small>
+        <h2 class="t-white">Excellence in <span>Services</span></h2>
+
+        <div class="middle">
+          <p class="t-grey">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
+          <span class="btn btn-2">see all</span>
+        </div>
+
+        <div class="bottom">
+          <div v-for="e in services" class="box b-dgrey">
+            <img :src="imgPath + e.img + e.imgExt" alt="e.img">
+            <h3 class="t-white"> {{e.title}} </h3>
+            <p class="t-grey"> {{e.p}} </p>
+            <span class="btn btn-2">read more</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section 4 -->
     <section></section>
     <!-- Section 5 -->

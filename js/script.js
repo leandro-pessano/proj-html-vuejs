@@ -47,6 +47,44 @@ var app = new Vue ({
         title: 'Expertise',
         p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
       }
+    ],
+    services: [
+      {
+        img: 'organization',
+        imgExt: '.png',
+        title: 'Audit & Assurance',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'case',
+        imgExt: '.png',
+        title: 'Financial ADvisory',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'chart',
+        imgExt: '.png',
+        title: 'Analytics and M&A',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'plane',
+        imgExt: '.png',
+        title: 'Middle Marketing',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'globe',
+        imgExt: '.png',
+        title: 'Legal Consulting',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'inbox',
+        imgExt: '.png',
+        title: 'Regulatory Risk',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      }
     ]
   },
   methods: {
