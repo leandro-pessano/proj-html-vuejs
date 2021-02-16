@@ -99,6 +99,17 @@ p {
   color: #606D75;
 }
 
+small {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  color: #606D75;
+  text-align: left;
+}
+
 /* Colors */
 .t-white {
   color: white;
@@ -245,11 +256,6 @@ main .jumbotron {
   opacity: 0.25;
 }
 
-#about .container small {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 #about .container h2 span {
   font-family: inherit;
   padding: 0 10px;
@@ -290,11 +296,6 @@ main .jumbotron {
 }
 
 /* SERVICES */
-#services .container small {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 #services .container h2 span {
   font-family: inherit;
   padding: 0 10px;
@@ -302,12 +303,18 @@ main .jumbotron {
 }
 
 #services .container .middle {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
 #services .container .middle>p {
   max-width: 80%;
+}
+
+#services .container .middle .btn {
+  position: absolute;
+  right: 0;
 }
 
 #services .container .bottom {
@@ -327,4 +334,66 @@ main .jumbotron {
 
 #services .container .bottom .btn {
   display: inline-block;
+}
+
+/* PRICING */
+#pricing .container {
+  text-align: center;
+}
+
+#pricing .container h2 span {
+  font-family: inherit;
+  padding: 0 10px;
+  background-color: #DAECED;
+}
+
+#pricing .container p {
+  margin: 20px auto;
+  max-width: 70%;
+}
+
+#pricing .container .middle {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pricing .container .middle img {
+  height: 44px;
+}
+
+#pricing .container .middle .box {
+  position: relative;
+}
+
+#pricing .container .middle .box>i {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #058283;
+  cursor: pointer;
+}
+
+#pricing .container .middle .box:hover>i {
+  display: block;
+}
+
+#pricing .container .box h3.t-dgreen {
+  font-weight: normal;
+}
+
+#pricing .container .box h3.t-dgreen span {
+  font-weight: bold;
+  font-size: 2.625rem
+}
+
+#pricing .container .box ul li {
+  padding: 10px;
+}
+
+#pricing .container .box ul li i {
+  float: right;
 }

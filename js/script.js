@@ -85,6 +85,92 @@ var app = new Vue ({
         title: 'Regulatory Risk',
         p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
       }
+    ],
+    pricing: [
+      {
+        img: 'rocket',
+        imgExt: '.png',
+        title: 'Standard',
+        price: '490',
+        li: [
+          {
+            feature: 'Standard Accounting',
+            included: true
+          },
+          {
+            feature: 'Platform Access',
+            included: true
+          },
+          {
+            feature: 'Business Orientation',
+            included: false
+          },
+          {
+            feature: 'Dedicated Consultant',
+            included: false
+          },
+          {
+            feature: 'Personal Assistance',
+            included: false
+          }
+        ]
+      },
+      {
+        img: 'case',
+        imgExt: '.png',
+        title: 'Professional',
+        price: '890',
+        li: [
+          {
+            feature: 'Standard Accounting',
+            included: true
+          },
+          {
+            feature: 'Platform Access',
+            included: true
+          },
+          {
+            feature: 'Business Orientation',
+            included: true
+          },
+          {
+            feature: 'Dedicated Consultant',
+            included: false
+          },
+          {
+            feature: 'Personal Assistance',
+            included: false
+          }
+        ]
+      },
+      {
+        img: 'diamond',
+        imgExt: '.png',
+        title: 'Ultimate',
+        price: '1.390',
+        li: [
+          {
+            feature: 'Standard Accounting',
+            included: true
+          },
+          {
+            feature: 'Platform Access',
+            included: true
+          },
+          {
+            feature: 'Business Orientation',
+            included: true
+          },
+          {
+            feature: 'Dedicated Consultant',
+            included: true
+          },
+          {
+            feature: 'Personal Assistance',
+            included: true
+          }
+        ]
+      }
     ]
   },
   methods: {
