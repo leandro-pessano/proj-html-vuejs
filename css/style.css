@@ -2,24 +2,159 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
   margin: 0 auto;
   height: 100%;
-  width: 1070px;
+  width: 1140px;
+}
+
+/* Sections common parameters */
+section {
+  padding: 130px;
+}
+
+section .box {
+  padding: 45px;
+  width: calc(100% /3);
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+section .box:not(:last-child) {
+  margin-right: 30px;
+}
+
+section .box .img-border {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.box .img-border img {
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box h3 {
+  margin: 20px 0;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid #058283;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.6s;
+}
+
+.btn-1 {
+  background-color: #058283
+}
+
+.btn:hover {
+  background-color: #00A6A6;
+  border: 1px solid #00A6A6;
+}
+
+/* Text */
+h1 {
+  font-weight: 900;
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 span {
+  padding: 0 10px;
+  font-family: inherit;
+  background-color: rgba(5, 130, 131, 0.2);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #969FA4;
+}
+
+/* Colors */
+.t-white {
+  color: white;
+}
+.b-white {
+  background-color: white;
+}
+
+.t-grey {
+  color: #c0c3d0;
+}
+
+.b-lgrey {
+  background-color: #EEF4ED;
+}
+
+.t-dblue {
+  color: #21333E;
+}
+.b-blue {
+  background-color: #21333E;
+}
+
+.b-lgreen {
+  background-color: #DAECED;
+}
+.b-green {
+  background-color: #00A6A6;
+}
+.b-dgreen {
+  background-color: #058283;
 }
 
 /* HEADER */
-header {
+header .container {
   height: 50px;
-  background-color: #21333E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
 }
+
+header span:hover, header i:hover {
+  color: #00A6A6;
+  cursor: pointer;
+}
+
+header i {
+  margin-right: 4px;
+}
+
+header .header-right i {
+  margin-left: 30px;
+}
+
+header .header-right>i:last-child {
+  margin-right: 0;
+}
+
 
 /* JUMBO */
 main .jumbotron {
   position: relative;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 50px);
   background-image: url(../img/hero-image.png);
   background-size: cover;
   background-position: bottom;
@@ -30,3 +165,32 @@ main .jumbotron {
   background-color: rgb(0, 0, 10);
   opacity: 0.7;
 }
+
+.jumbotron .jumbo-center {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.jumbotron .jumbo-center p {
+  margin: 20px auto 60px;
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: #c0c3d0;
+  text-shadow: 2px 2px 8px black;
+}
+
+.jumbotron .jumbo-center .btn {
+  margin: 0 8px;
+}
+
+/* FEATURES */
+#features .container {
+  display: flex;
+}
+
+/* ABOUT */

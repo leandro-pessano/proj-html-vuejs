@@ -7,30 +7,74 @@
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header>
-    <div class="container"></div>
+  <header class="b-blue t-grey">
+    <div class="container">
+
+      <div class="header-left">
+        <span>
+          <i class="fas fa-clock mr-2"></i>
+          Open Hours: Mon - Sat - 9:00 - 18:00
+        </span>
+      </div>
+
+      <div class="header-right">
+        <span>
+          <i class="fas fa-phone-alt mr-2"></i>
+          +1 (305) 1234-5678
+        </span>
+        <span>
+          <i class="fas fa-envelope mr-2"></i>
+          hello@example.com
+        </span>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+
+    </div>
   </header>
 
   <!-- Main -->
-  <main>
+  <main id="root">
 
     <!-- Jumbotron -->
-    <div class="jumbotron">
+    <div class="jumbotron t-white">
       <div class="layover"></div>
-      <div class="container"></div>
+      <div class="container">
+        <div class="jumbo-top"></div>
+        <div class="jumbo-center">
+          <h1>Lead ~ <span>Customer</span></h1>
+          <p>Successful strategies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services.</p>
+          <span class="btn btn-1">get in touch</span>
+          <span class="btn btn-2">read more</span>
+        </div>
+      </div>
     </div>
 
     <!-- Section 1 -->
-    <section>
-      <div class="container"></div>
+    <section id="features" class="b-lgrey">
+      <div class="container">
+        <div v-for="e in features" class="box b-white">
+          <div class="img-border b-lgreen">
+            <img :src="imgPath + e.img + e.imgExt" alt="e.img">
+          </div>
+          <h3 class="t-dblue"> {{e.title}} </h3>
+          <p> {{e.p}} </p>
+        </div>
+      </div>
     </section>
+
     <!-- Section 2 -->
-    <section></section>
+    <section id="about">
+
+    </section>
     <!-- Section 3 -->
     <section></section>
     <!-- Section 4 -->
