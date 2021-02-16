@@ -21,6 +21,32 @@ var app = new Vue ({
         title: 'Performance',
         p: 'Achieving maximum impact and value from investments in finance and supply chain.'
       }
+    ],
+    about: [
+      {
+        img: 'ribbon',
+        imgExt: '.png',
+        title: 'Tradition',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'lock',
+        imgExt: '.png',
+        title: 'Security',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'edit',
+        imgExt: '.png',
+        title: 'Certificate',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'graduate',
+        imgExt: '.png',
+        title: 'Expertise',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      }
     ]
   },
   methods: {

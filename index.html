@@ -73,7 +73,21 @@
 
     <!-- Section 2 -->
     <section id="about">
+      <div class="container">
+        <small class="t-green">About the network</small>
+        <h2 class="t-dblue"><span class="t-dgreen">The</span> Company</h2>
+        <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
 
+        <div class="infos">
+          <div v-for="e in about">
+            <img :src="imgPath + e.img + e.imgExt" :alt="e.img">
+            <h3 class="t-dblue"> {{e.title}} </h3>
+            <p> {{e.p}} </p>
+          </div>
+        </div>
+
+      </div>
+      <img src="img/about-3.jpg" alt="about">
     </section>
     <!-- Section 3 -->
     <section></section>
