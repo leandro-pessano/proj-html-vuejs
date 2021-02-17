@@ -48,7 +48,7 @@
     <div class="jumbotron t-white">
       <div class="layover"></div>
 
-      <nav :class="(scrollPosition > 50) ? 'transition-bg' : ''" class="nav">
+      <nav :class="(scrollPosition > 50) ? 'transition-blue' : (scrollPosition < 50) ? 'transition-transparent' :''" class="nav">
         <div class="container">
           <div class="logo">
             <span class="t-grey"><span class="t-green">N e x </span>G e n</span>

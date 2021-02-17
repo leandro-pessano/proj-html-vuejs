@@ -218,7 +218,7 @@ header .header-right>i:last-child {
   }
 
   .nav .container span:not(:last-child):hover {
-    transition: color 0.2s;
+    transition: color 0.6s;
     color: #00A6A6;
   }
 
@@ -231,13 +231,18 @@ header .header-right>i:last-child {
     border-radius
   }
 
-  .nav.transition-bg {
+  .nav.transition-transparent {
+    transition: background 0.2s;
+    background: transparent;
+  }
+
+  .nav.transition-blue {
     margin-top: 0;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
-    transition: background 0.6s;
+    transition: background 0.3s;
     background-color: #21333E;
   }
   /*  */
