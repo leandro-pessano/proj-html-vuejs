@@ -47,6 +47,24 @@
     <!-- Jumbotron -->
     <div class="jumbotron t-white">
       <div class="layover"></div>
+
+      <nav :class="(scrollPosition > 50) ? 'transition-bg' : ''" class="nav">
+        <div class="container">
+          <div class="logo">
+            <span class="t-grey"><span class="t-green">N e x </span>G e n</span>
+          </div>
+
+          <div class="nav-menu t-white">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Pricing</span>
+            <span>Blog</span>
+            <span class="btn btn-1">Get in touch</span>
+          </div>
+        </div>
+      </nav>
+
       <div class="container">
         <div class="jumbo-top"></div>
         <div class="jumbo-center">

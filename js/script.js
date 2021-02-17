@@ -1,6 +1,7 @@
 var app = new Vue ({
   el: "#root",
   data: {
+    scrollPosition: false,
     imgPath: 'img/',
     features: [
       {
@@ -174,6 +175,11 @@ var app = new Vue ({
     ]
   },
   methods: {
-
+    updateScroll() {
+       this.scrollPosition = window.scrollY;
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
   }
 });
