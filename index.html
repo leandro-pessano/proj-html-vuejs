@@ -19,18 +19,18 @@
 
       <div class="header-left">
         <span>
-          <i class="fas fa-clock mr-2"></i>
+          <i class="fas fa-clock"></i>
           Open Hours: Mon - Sat - 9:00 - 18:00
         </span>
       </div>
 
       <div class="header-right">
         <span>
-          <i class="fas fa-phone-alt mr-2"></i>
+          <i class="fas fa-phone-alt"></i>
           +1 (305) 1234-5678
         </span>
         <span>
-          <i class="fas fa-envelope mr-2"></i>
+          <i class="fas fa-envelope"></i>
           hello@example.com
         </span>
         <i class="fab fa-facebook-f"></i>
@@ -201,7 +201,48 @@
     </section>
 
     <!-- Section 7 -->
-    <section></section>
+    <section id="contact">
+      <div class="container">
+
+        <div class="left">
+          <small class="t-green">Send a message</small>
+          <h2 class="t-blue">Get in <span class="t-dgreen b-lgreen">Touch</span></h2>
+          <p>We will respond to your message as soon as possible.</p>
+          <div>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+          </div>
+          <div>
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="More info">
+          </div>
+          <textarea placeholder="Message" rows="6" cols="80"></textarea>
+          <div class="btn btn-1">Send</div>
+        </div>
+        <div class="right">
+          <h4 class="t-blue">Example Inc.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+          <ul class="t-dgreen">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (305) 1234-5678</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>hello@example.com</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Naub Avenue, 987</span>
+            </li>
+          </ul>
+          <div class="btn btn-2">View Map</div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Section 8 -->
     <section id="top-footer" class="b-dblue">
       <div class="container">
@@ -213,15 +254,15 @@
             <p class="t-grey">A Functional HTML Template for Corporate & Business.</p>
             <ul class="t-grey">
               <li>
-                <i class="fas fa-phone-alt mr-2"></i>
+                <i class="fas fa-phone-alt"></i>
                 <span>+1 (305) 1234-5678</span>
               </li>
               <li>
-                <i class="fas fa-envelope mr-2"></i>
+                <i class="fas fa-envelope"></i>
                 <span>hello@example.com</span>
               </li>
               <li>
-                <i class="fas fa-map-marker-alt mr-2"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <span>Naub Avenue, 987</span>
               </li>
             </ul>
@@ -240,6 +281,10 @@
 
       </div>
     </section>
+
+    <div @click="scrollTop()" v-if="scrollPosition > 6000" class="scroll-up t-green">
+      <i class="fas fa-arrow-up"></i>
+    </div>
 
   </main>
 

@@ -276,6 +276,10 @@ var app = new Vue ({
   methods: {
     updateScroll() {
        this.scrollPosition = window.scrollY;
+       console.log(this.scrollPosition);
+    },
+    scrollTop() {
+      window.scrollTo(0, window.offsetTop);
     }
   },
   mounted() {

@@ -584,14 +584,96 @@ main .jumbotron {
   border-radius: 5px;
 }
 
-#subscribe .container .right input:focus{
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
 #subscribe .container .right .btn{
   padding: 12px 25px;
   width: 148px;
 }
+
+/* CONTACT */
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .container .left {
+  width: 63%;
+}
+
+#contact .container .left>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .container .left h2>span {
+  font-family: inherit;
+  padding: 0 10px;
+}
+
+#contact .container .left p {
+  margin-bottom: 40px;
+}
+
+#contact .container .left input{
+  margin: 10px 0;
+  padding: 18px;
+  width: calc(50% - 10px);
+  font-size: 1rem;
+  background-color: rgba(96, 109, 117, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#contact .container .left textarea{
+  padding: 18px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: rgba(96, 109, 117, 0.1);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+#contact .container .left .btn {
+  margin-top: 30px;
+  width: 100px;
+}
+
+#contact .container .right {
+  width: 32%;
+}
+
+#contact .container .right h4 {
+  font-size: 1.5rem;
+}
+
+#contact .container .right p {
+  margin: 24px 0;
+}
+
+#contact .container .right ul li {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+#contact .container .right ul li i {
+  margin-right: 5px;
+  padding: 14px;
+  background-color: #DAECED;
+  border-radius: 50%;
+}
+
+#contact .container .right .btn {
+  color: #058283;
+  margin-top: 30px;
+  width: 140px;
+}
+
+#contact .container .right .btn:hover {
+  color: white;
+}
+
 
 /* TOP FOOTER */
 #top-footer .container {
@@ -653,4 +735,18 @@ footer .container {
 
 footer .container span {
   font-size: 1rem;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom : 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.scroll-up i {
+  padding: 14px;
+  background-color: #DAECED;
+  border-radius: 50%;
+  cursor: pointer;
 }
