@@ -24,7 +24,6 @@
   background-color: rgba(5, 130, 131, 0.2);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  border-radius
 }
 
 /* Sections common parameters */
@@ -459,6 +458,91 @@ main .jumbotron {
 
 #pricing .container .box ul li i {
   float: right;
+}
+
+/* BLOG */
+#blog .container .middle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#blog .container h2 span {
+  padding: 0 10px;
+}
+
+#blog .container .middle>p {
+  max-width: 80%;
+}
+
+#blog .container .middle .btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#blog .container .bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#blog .container .bottom .box {
+  height: 360px;
+  width: 360px;
+  position: relative;
+  background-size: cover;
+  text-align: center;
+}
+
+#blog .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 360px;
+  width: 360px;
+  background-color: rgb(0, 0, 10);
+  opacity: 0.4;
+  border-radius: 8px;
+}
+
+#blog .container .bottom .box h3 {
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  text-shadow: 2px 2px 8px black;
+}
+
+#blog .container .bottom .box .hover {
+  height: 100%;
+  display: none;
+}
+
+#blog .box .hover div, #blog .box .hover p {
+  color: white;
+  z-index: 1;
+}
+
+#blog .box .hover div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#blog .container .bottom .box:hover .hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#blog .container .bottom .box:hover .layover {
+  opacity: 0.6;
+}
+
+#blog .container .bottom .box:hover h3 {
+  position: absolute;
+  bottom: 40%;
 }
 
 /* TOP FOOTER */

@@ -156,7 +156,32 @@
     </section>
 
     <!-- Section 5 -->
-    <section></section>
+    <section id="blog" class="b-white">
+      <div class="container">
+        <small class="t-green">Our editorial content</small>
+        <h2 class="t-blue">Latest <span class="t-dgreen b-lgreen">News</span></h2>
+
+        <div class="middle">
+          <p>Every week we publish content about what is best in the business world.</p>
+          <span class="btn btn-1">see all</span>
+        </div>
+
+        <div class="bottom">
+          <div v-for="e in blog" class="box" :style="{ backgroundImage: `url(${imgPath + e.img + e.imgExt})` }">
+            <div class="layover"></div>
+            <div class="hover t-white">
+              <div>
+                <span>{{e.name}}</span>
+                <span>{{e.date}}</span>
+              </div>
+              <p> {{e.p}} </p>
+            </div>
+            <h3 class="t-white"> {{e.title}} </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section 6 -->
     <section></section>
     <!-- Section 7 -->

@@ -245,6 +245,32 @@ var app = new Vue ({
           }
         ]
       }
+    ],
+    blog: [
+      {
+        img: 'news-1',
+        imgExt: '.jpg',
+        name: 'Andrea Miller',
+        date: '2 Days Ago',
+        title: 'Increasing creativity is possible for everyone',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'news-2',
+        imgExt: '.jpg',
+        name: 'John Smith',
+        date: '9 Days Ago',
+        title: 'Because market research is part of the business plan',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      {
+        img: 'news-3',
+        imgExt: '.jpg',
+        name: 'Andrea Miller',
+        date: '16 Days Ago',
+        title: 'Working from home is now a trend',
+        p: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      }
     ]
   },
   methods: {
