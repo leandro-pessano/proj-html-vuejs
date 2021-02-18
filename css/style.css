@@ -750,3 +750,7 @@ footer .container span {
   border-radius: 50%;
   cursor: pointer;
 }
+
+.scroll-up i:hover {
+  background-color: white;
+}
