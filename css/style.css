@@ -545,6 +545,54 @@ main .jumbotron {
   bottom: 40%;
 }
 
+/* SUBSCRIBE */
+#subscribe {
+  background-image: url(../img/bg-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#subscribe .container {
+  display: flex;
+  justify-content: center;
+}
+
+#subscribe .container>div {
+  margin: 0 20px;
+  width: 40%;
+}
+
+#subscribe .container .left h2 span {
+  background-color: #173338;
+  font-family: inherit;
+  padding: 0 10px;
+}
+
+#subscribe .container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#subscribe .container .right input{
+  width: 90%;
+  padding: 18px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#subscribe .container .right input:focus{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#subscribe .container .right .btn{
+  padding: 12px 25px;
+  width: 148px;
+}
+
 /* TOP FOOTER */
 #top-footer .container {
   display: flex;
