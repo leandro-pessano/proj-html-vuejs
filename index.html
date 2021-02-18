@@ -162,7 +162,43 @@
     <!-- Section 7 -->
     <section></section>
     <!-- Section 8 -->
-    <section></section>
+    <section id="top-footer" class="b-dblue">
+      <div class="container">
+
+        <div class="contacts box">
+            <div class="logo">
+              <span class="t-grey"><span class="t-green">N e x </span>G e n</span>
+            </div>
+            <p class="t-grey">A Functional HTML Template for Corporate & Business.</p>
+            <ul class="t-grey">
+              <li>
+                <i class="fas fa-phone-alt mr-2"></i>
+                <span>+1 (305) 1234-5678</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope mr-2"></i>
+                <span>hello@example.com</span>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Naub Avenue, 987</span>
+              </li>
+            </ul>
+            <span class="btn btn-2">Get in touch</span>
+        </div>
+
+        <div v-for="e in offers" class="box b-dgrey">
+          <h3 class="t-white"> {{e.title}} </h3>
+          <ul class="t-grey">
+            <li v-for="e in e.li">
+            <i class="fas fa-chevron-right"></i>
+            {{e.offer}}
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
 
   </main>
 

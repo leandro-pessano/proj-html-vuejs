@@ -172,6 +172,79 @@ var app = new Vue ({
           }
         ]
       }
+    ],
+    offers: [
+      {
+        title: 'About',
+        li: [
+          {
+            offer: 'The Company'
+          },
+          {
+            offer: 'Institutional'
+          },
+          {
+            offer: 'Social & Events'
+          },
+          {
+            offer: 'Innovation'
+          },
+          {
+            offer: 'Environment'
+          },
+          {
+            offer: 'Technology'
+          }
+        ]
+      },
+      {
+
+        title: 'Services',
+        li: [
+          {
+            offer: 'Audit & Assurance'
+          },
+          {
+            offer: 'Financial Advisory'
+          },
+          {
+            offer: 'Analytics M&A'
+          },
+          {
+            offer: 'Middle Marketing'
+          },
+          {
+            offer: 'Legal Consulting'
+          },
+          {
+            offer: 'Regulatory Risk'
+          }
+        ]
+      },
+      {
+
+        title: 'Support',
+        li: [
+          {
+            offer: 'Responsibility'
+          },
+          {
+            offer: 'Terms of Use'
+          },
+          {
+            offer: 'About Cookies'
+          },
+          {
+            offer: 'Privacy Policy'
+          },
+          {
+            offer: 'Accessibility'
+          },
+          {
+            offer: 'Information'
+          }
+        ]
+      }
     ]
   },
   methods: {
